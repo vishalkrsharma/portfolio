@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        UbuntuMono: 'UbuntuMono',
+        Comfortaa: 'Comfortaa',
+        DancingScript: 'DancingScript',
       },
     },
   },

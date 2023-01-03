@@ -8,6 +8,7 @@ import animoji from '../public/animoji.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
+import logo from '../public/logo.svg';
 import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
 import web3 from '../public/web3.png';
@@ -29,32 +30,29 @@ export default function Home() {
           <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
           <link rel='manifest' href='/site.webmanifest'></link>
         </Head>
-        <main className='bg-white px-10 md:px-20 dark:bg-gray-900'>
-          <section className='min-h-screen'>
-            <nav className='py-10 mb-12 flex justify-between'>
-              <h1 className='text-xl'>Vishal Kumar Sharma</h1>
-              <ul className='flex items-center'>
-                <li>
-                  <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => setDarkMode(!darkMode)} />
-                </li>
-                <li>
-                  <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href='resume.pdf' target='_blank'>
-                    Resume
-                  </a>
-                </li>
-              </ul>
+        <main className='px-5 md:px-20 bg-gray-900 font-Comfortaa '>
+          <section className='pt-5 flex justify-between align-middle'>
+            <Image src={logo} className='w-20 h-20' />
+            <nav className='py-5 mb-12 flex justify-between align-middle'>
+              <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 h-10 font-bold' href='resume.pdf' target='_blank'>
+                Resume
+              </a>
             </nav>
-            <div className='text-center p-10'>
-              <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Vishal Kumar Sharma</h2>
-              <h3 className='text-2xl py-2 md:text-3xl'>Developer and Designer.</h3>
-              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>INTRO TEXT</p>
-            </div>
-            <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-              <AiFillLinkedin />
-            </div>
-            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-10 md:h-96 md:w-96'>
+          </section>
+          <section className='min-h-screen'>
+            <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden md:h-80 md:w-80'>
               <Image src={animoji} fill={true} style={{ objectFit: 'cover' }} />
             </div>
+            <div className='text-center p-5'>
+              <h2 className='text-3xl py-2 text-teal-600 font-medium md:text-6xl'>
+                <span className='font-DancingScript'>I'm</span> Vishal Kumar Sharma
+              </h2>
+              <h3 className='text-2xl py-2 md:text-3xl text-white'>Developer and Designer.</h3>
+              <p className='text-md py-5 leading-8 text-gray-400 md:text-xl max-w-lg mx-auto '>INTRO TEXT</p>
+            </div>
+            {/* <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+              <AiFillLinkedin />
+            </div> */}
           </section>
 
           <section>
