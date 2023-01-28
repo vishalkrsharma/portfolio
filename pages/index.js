@@ -31,6 +31,7 @@ export default function Home() {
           <link rel='manifest' href='/site.webmanifest'></link>
         </Head>
         <main className='px-5 md:px-20 bg-gray-900 font-Comfortaa '>
+          {/* NAVBAR */}
           <section className='pt-5 flex justify-between align-middle'>
             <Image src={logo} className='w-20 h-20' />
             <nav className='py-5 mb-12 flex justify-between align-middle'>
@@ -39,7 +40,9 @@ export default function Home() {
               </a>
             </nav>
           </section>
-          <section className='min-h-screen'>
+
+          {/* INTRO */}
+          <section>
             <div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden md:h-80 md:w-80'>
               <Image src={animoji} fill={true} style={{ objectFit: 'cover' }} />
             </div>
@@ -48,7 +51,7 @@ export default function Home() {
                 <span className='font-DancingScript'>I'm</span> Vishal Kumar Sharma
               </h2>
               <h3 className='text-2xl py-2 md:text-3xl text-white'>Developer and Designer.</h3>
-              <p className='text-md py-5 leading-8 text-gray-400 md:text-xl max-w-lg mx-auto '>INTRO TEXT</p>
+              <p className='text-md py-5 leading-8 text-gray-400 md:text-xl max-w-lg mx-auto '>I am guy who loves programming and developing websites.</p>
             </div>
             {/* <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
               <AiFillLinkedin />
@@ -67,10 +70,10 @@ export default function Home() {
                 <p>TEXT</p>
 
                 <h4 className='py-4 text-teal-600'>Tools I use</h4>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
               </div>
 
               <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
@@ -79,10 +82,10 @@ export default function Home() {
                 <p>TEXT</p>
 
                 <h4 className='py-4 text-teal-600'>Tools I use</h4>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
               </div>
 
               <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
@@ -91,10 +94,10 @@ export default function Home() {
                 <p>TEXT</p>
 
                 <h4 className='py-4 text-teal-600'>Tools I use</h4>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
-                <p className='text-gray-800 py-1 '>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
+                <p className='text-gray-800 py-1'>TEXT</p>
               </div>
             </div>
           </section>
