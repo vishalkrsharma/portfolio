@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         Comfortaa: 'Comfortaa',
         DancingScript: 'DancingScript',
+        SpaceMono: 'Space Mono',
       },
     },
     colors: {

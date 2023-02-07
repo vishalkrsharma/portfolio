@@ -28,10 +28,15 @@ a {
 
 @font-face {
   font-family: 'Comfortaa';
-  src: url('../public/Comfortaa.ttf');
+  src: url('../assets/Comfortaa.ttf');
 }
 
 @font-face {
   font-family: 'DancingScript';
-  src: url('../public/DancingScript.ttf');
+  src: url('../assets/DancingScript.ttf');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../assets/spacemono-regular-webfont.woff2') format('woff2'), url('../assets/spacemono-regular-webfont.woff2') format('woff');
 }
