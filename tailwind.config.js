@@ -9,6 +9,15 @@ module.exports = {
         DancingScript: 'DancingScript',
       },
     },
+    colors: {
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      white: 'var(--color-white)',
+      dark: 'var(--color-dark)',
+      teal: 'var(--color-teal)',
+      cyan: 'var(--color-cyan)',
+      card: 'var(--color-card)',
+    },
   },
   plugins: [],
 };
