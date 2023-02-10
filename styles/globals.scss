@@ -1,17 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  :root {
-    --color-primary: #14b8a6;
-    --color-white: #ffffff;
-    --color-secondary: #9ca3af;
-    --color-dark: #111827;
-    --color-cyan: #06b6d4;
-    --color-teal: #14b8a6;
-    --color-card: #293c66;
-  }
+:root {
+  --color-primary: #14b8a6;
+  --color-white: #ffffff;
+  --color-secondary: #9ca3af;
+  --color-dark: #111827;
+  --color-cyan: #06b6d4;
+  --color-teal: #14b8a6;
+  --color-card: #293c66;
 }
 
 * {

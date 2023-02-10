@@ -6,7 +6,6 @@ import Intro from '../components/Intro';
 import Services from '../components/Services';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
   return (
     <>
       <div>
@@ -19,12 +18,19 @@ export default function Home() {
           <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
           <link rel='manifest' href='/site.webmanifest'></link>
         </Head>
-        <main className='bg-dark font-Comfortaa'>
+        <main className='font-Comfortaa'>
           <Navbar />
           <Intro />
           <Services />
         </main>
       </div>
+      <style jsx>
+        {`
+          main {
+            background-color: var(--color-dark);
+          }
+        `}
+      </style>
     </>
   );
 }
