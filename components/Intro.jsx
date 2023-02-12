@@ -9,7 +9,7 @@ export default function Intro() {
         <div className='intro__animoji'>
           <Image src={animoji} alt={animoji} fill={true} style={{ objectFit: 'cover' }} priority={true} />
         </div>
-        <div className='hero p-5 px-10'>
+        <div className='hero'>
           <h2 className='title'>I'm Vishal Kumar Sharma</h2>
           <h3 className='hero__sub'>Developer and Designer.</h3>
           <p className='hero__text'>I am guy who loves programming and developing websites.</p>
