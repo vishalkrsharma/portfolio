@@ -18,7 +18,7 @@ export default function Home() {
           <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
           <link rel='manifest' href='/site.webmanifest'></link>
         </Head>
-        <main className='font-Comfortaa'>
+        <main>
           <Navbar />
           <Intro />
           <Services />
@@ -26,8 +26,10 @@ export default function Home() {
       </div>
       <style jsx>
         {`
+          @import '../styles/variables';
           main {
-            background-color: var(--color-dark);
+            background-color: $color-dark;
+            font-family: 'Comfortaa';
           }
         `}
       </style>
