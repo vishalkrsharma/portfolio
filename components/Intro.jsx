@@ -72,6 +72,7 @@ export default function Intro() {
               animation: typewriter $title-duration steps($title-steps) forwards, blick $title-blink-duration steps($title-steps) infinite;
             }
             font-size: 4.5rem;
+            font-weight: 400;
             line-height: 4.5rem;
             padding: 0.5rem 0;
             font-family: 'Space Mono';
