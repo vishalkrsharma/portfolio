@@ -24,7 +24,7 @@ export default function Contact() {
             &__title {
               color: $color-white;
               font-size: 2.5rem;
-              margin-bottom: 1rem;
+              margin-bottom: 2.5rem;
               font-weight: 400;
             }
             margin-top: 5rem;
@@ -62,6 +62,12 @@ export default function Contact() {
             display: flex;
             justify-content: space-between;
             align-items: center;
+          }
+
+          @media (max-width: 600px) {
+            .buttons {
+              padding: 0 3rem;
+            }
           }
         `}
       </style>
