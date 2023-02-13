@@ -1,0 +1,78 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  outline: transparent;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../assets/Comfortaa.ttf');
+}
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../assets/DancingScript.ttf');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../assets/spacemono-regular-webfont.woff2') format('woff2'), url('../assets/spacemono-regular-webfont.woff2') format('woff');
+}
