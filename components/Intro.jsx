@@ -22,16 +22,15 @@ export default function Intro() {
             &__animoji {
               margin: 0 auto;
               margin-bottom: 1rem;
-              background-image: linear-gradient(to right, $color-teal, $color-cyan);
+              background-image: linear-gradient(to bottom, $color-teal, $color-dark);
               border-radius: 50%;
-              height: 40rem;
-              width: 40rem;
+              height: 35rem;
+              width: 35rem;
               position: relative;
               overflow: hidden;
             }
 
             margin-top: 5rem;
-            text-align: center;
             color: $color-white;
           }
 
@@ -50,6 +49,7 @@ export default function Intro() {
             }
             width: 90%;
             margin: 0 auto;
+            margin-top: 4rem;
           }
 
           .title {
@@ -64,12 +64,12 @@ export default function Intro() {
             }
             &::before {
               background: $color-dark;
-              animation: typewriter 4s steps(23) forwards;
+              animation: typewriter $title-duration steps($title-steps) forwards;
             }
             &::after {
               width: 0.125rem;
               background-color: $color-teal;
-              animation: typewriter 4s steps(23) forwards, blick 1s steps(23) infinite;
+              animation: typewriter $title-duration steps($title-steps) forwards, blick $title-blink-duration steps($title-steps) infinite;
             }
             font-size: 4.5rem;
             line-height: 4.5rem;
@@ -139,9 +139,6 @@ export default function Intro() {
             to {
               background: transparent;
             }
-          }
-
-          @media (min-width: 768px) {
           }
         `}
       </style>

@@ -24,6 +24,9 @@ export default function Navbar() {
         @import '../styles/variables';
         .nav {
           &__resume {
+            &:active {
+              scale: 0.95;
+            }
             display: block;
             padding: 1.25rem 2rem;
             background-image: linear-gradient(to right, $color-teal, $color-cyan);

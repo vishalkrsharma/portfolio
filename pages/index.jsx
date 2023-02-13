@@ -30,6 +30,8 @@ export default function Home() {
           main {
             background-color: $color-dark;
             font-family: 'Comfortaa';
+            text-align: center;
+            font-weight: 400;
           }
         `}
       </style>
