@@ -58,7 +58,6 @@ export default function Services() {
             margin-bottom: 2rem;
           }
           margin-top: 5rem;
-          padding-bottom: 5rem;
         }
 
         .cards {

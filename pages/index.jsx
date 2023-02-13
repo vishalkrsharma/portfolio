@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Intro from '../components/Intro';
 import Services from '../components/Services';
+import Contact from '../components/Contact';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <Navbar />
           <Intro />
           <Services />
+          <Contact />
         </main>
       </div>
       <style jsx>
