@@ -69,6 +69,13 @@ export default function Contact() {
               padding: 0 3rem;
             }
           }
+
+          @media (min-width: 1000px) {
+            .buttons {
+              width: 60%;
+              margin: 0 auto;
+            }
+          }
         `}
       </style>
     </>
