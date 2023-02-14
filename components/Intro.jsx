@@ -22,7 +22,7 @@ export default function Intro() {
               margin: 0 auto;
               margin-bottom: 1rem;
               background-image: linear-gradient(to bottom, $color-teal, $color-dark);
-              border-radius: 50%;
+              border-radius: 50% 55% 45% 50%;
               height: 35rem;
               width: 35rem;
               position: relative;
