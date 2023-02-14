@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import animoji from '../assets/animoji.png';
 
@@ -11,7 +10,7 @@ export default function Intro() {
         </div>
         <div className='hero'>
           <h2 className='title'>I'm Vishal Kumar Sharma</h2>
-          <h3 className='hero__sub'>Developer and Designer.</h3>
+          <h3 className='hero__sub'>Developer & Designer</h3>
           <p className='hero__text'>I am guy who loves programming and developing websites.</p>
         </div>
       </section>
@@ -38,6 +37,11 @@ export default function Intro() {
             &__sub {
               font-size: 3rem;
               font-weight: 400;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-image: linear-gradient(to right, $color-teal, $color-cyan, $color-teal);
+              background-size: 200%;
+              animation: bg-pan 3s linear infinite;
             }
             &__text {
               margin: 0 auto;
@@ -76,7 +80,9 @@ export default function Intro() {
             line-height: 4.5rem;
             padding: 0.5rem 0;
             font-family: 'Space Mono';
-            color: $color-teal;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, $color-teal, $color-cyan);
             position: relative;
             display: inline-block;
             margin: 2rem 0;
@@ -139,6 +145,15 @@ export default function Intro() {
           @keyframes blick {
             to {
               background: transparent;
+            }
+          }
+
+          @keyframes bg-pan {
+            from {
+              background-position: 0% center;
+            }
+            to {
+              background-position: -200% center;
             }
           }
         `}

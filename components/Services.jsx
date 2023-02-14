@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 
 import { SiVisualstudiocode, SiCss3, SiHtml5, SiJavascript, SiFigma, SiSass } from 'react-icons/si';
