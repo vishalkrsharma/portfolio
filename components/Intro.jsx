@@ -22,7 +22,7 @@ export default function Intro() {
               margin: 0 auto;
               margin-bottom: 1rem;
               background-image: linear-gradient(to bottom, $color-teal, $color-dark);
-              border-radius: 50% 55% 45% 50%;
+              border-radius: 73% 87% 75% 86% / 79% 73% 88% 80%;
               height: 35rem;
               width: 35rem;
               position: relative;
@@ -67,14 +67,21 @@ export default function Intro() {
               left: 0;
             }
             &::before {
+              content: "I'm Vishal Kumar Sharma";
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
               background: $color-dark;
               animation: typewriter $title-duration steps($title-steps) forwards;
             }
             &::after {
+              content: "I'm Vishal Kumar Sharma";
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
               width: 0.125rem;
               background-color: $color-teal;
               animation: typewriter $title-duration steps($title-steps) forwards, blick $title-blink-duration steps($title-steps) infinite;
             }
+
             font-size: 4.5rem;
             font-weight: 400;
             line-height: 4.5rem;

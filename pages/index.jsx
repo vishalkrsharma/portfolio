@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Intro from '../components/Intro';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
+import Blob from '../components/Blob';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <link rel='manifest' href='/site.webmanifest'></link>
         </Head>
         <main>
+          <Blob />
           <Navbar />
           <Intro />
           <Services />
