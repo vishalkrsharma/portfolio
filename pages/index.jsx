@@ -21,7 +21,7 @@ export default function Home() {
           <link rel='manifest' href='/site.webmanifest'></link>
         </Head>
         <main>
-          <Blob />
+          {/* <Blob /> */}
           <Navbar />
           <Intro />
           <Services />
