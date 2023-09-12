@@ -1,0 +1,77 @@
+@import './_variables.module.scss';
+
+@mixin primaryText {
+  color: $text;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+}
+
+@mixin secondaryText {
+  font-size: 1.75rem;
+  text-wrap: balance;
+  color: $primary;
+}
+
+@mixin header {
+  @include primaryText;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+@mixin highlight {
+  color: $text;
+}
+
+@mixin button {
+  padding: 0.5rem 2rem;
+  // background-color: ${(props) => (props.$isActive ? 'var(--text)' : 'var(--primary)')};
+  color: $background;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  border-radius: $borderRadius;
+  @media (pointer: fine) {
+    cursor: pointer;
+    &:hover {
+      background-color: var(--text);
+    }
+  }
+}
+
+@mixin label {
+  color: $primary;
+  // font-size: 1.75rem;
+  width: 20rem;
+  @media (max-width: 1024px) {
+    width: 15rem;
+  }
+}
+
+@mixin table {
+  width: 100%;
+  &,
+  td,
+  tr,
+  th {
+    border-style: none;
+    vertical-align: top;
+  }
+  & tr {
+    border-bottom: 2rem solid transparent;
+  }
+}
+
+@mixin projectCard {
+}
+
+@mixin tagContainer {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@mixin linksContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+}

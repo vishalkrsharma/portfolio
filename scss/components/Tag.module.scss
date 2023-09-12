@@ -1,0 +1,10 @@
+@import '../abstracts/variables.module';
+
+.tagContainer {
+  background-color: $primary;
+  color: $background;
+  padding: 0.25rem 0.75rem;
+  border-radius: $borderRadius;
+  font-size: 1.25rem;
+  font-weight: 700;
+}

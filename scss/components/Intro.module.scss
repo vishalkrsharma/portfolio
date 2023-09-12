@@ -1,0 +1,97 @@
+@import '../abstracts/mixins';
+
+.introContainer {
+  padding: 10rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 100vh;
+  @media (min-width: 1024px) {
+    top: 0;
+    position: sticky;
+  }
+}
+
+.header {
+  &__name {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.75rem;
+    line-height: 4.5rem;
+  }
+  &__primary {
+    @include primaryText;
+  }
+
+  color: $text;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag {
+  @include secondaryText;
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
+}
+
+.iconsButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  &__link {
+    &.active {
+      color: $text;
+    }
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    color: $primary;
+    transition: all 0.2s;
+    font-weight: 600;
+
+    &__line {
+      &.active {
+        width: 8rem;
+        background-color: $text;
+      }
+      height: 0.1rem;
+      width: 5rem;
+      background-color: $primary;
+      transition: all 0.2s;
+    }
+    &:hover {
+      color: $text;
+      .nav__link__line {
+        width: 8rem;
+        background-color: $text;
+      }
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.infoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  padding: 10rem 0;
+  @media (max-width: 1024px) {
+    gap: 10rem;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../abstracts/variables.module';
+
+.navButtonContainer {
+  &.active {
+    background-color: $text;
+  }
+  display: block;
+  padding: 0.5rem 2rem;
+  background-color: $primary;
+  color: $background;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  border-radius: $borderRadius;
+  @media (pointer: fine) {
+    cursor: pointer;
+    &:hover {
+      background-color: $text;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.homePageContainer {
+  margin: 0 auto;
+  width: min(90%, 1200px);
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

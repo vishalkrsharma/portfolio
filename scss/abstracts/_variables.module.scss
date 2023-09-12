@@ -1,0 +1,15 @@
+$text: #fafafa;
+$background: #1a1919;
+$primary: #858683;
+$secondary: #0d0d0d;
+$accent: #737274;
+
+$borderRadius: 0.25rem;
+
+:export {
+  text: $text;
+  background: $background;
+  primary: $primary;
+  secondary: $secondary;
+  accent: $accent;
+}

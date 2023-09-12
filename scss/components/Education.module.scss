@@ -1,0 +1,17 @@
+@import '../abstracts/mixins';
+
+.header {
+  @include header;
+}
+
+.table {
+  @include table;
+}
+
+.label {
+  @include label;
+}
+
+.data {
+  @include secondaryText;
+}

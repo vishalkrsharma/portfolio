@@ -1,0 +1,23 @@
+@import '../abstracts/mixins';
+
+.featuredProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header {
+  @include header;
+}
+
+.projectsLink {
+  font-size: 1.5rem;
+  color: $primary;
+  transition: 0.2s all;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  &:hover {
+    color: $text;
+    text-decoration: underline;
+  }
+}

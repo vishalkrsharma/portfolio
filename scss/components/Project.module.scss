@@ -1,0 +1,49 @@
+@import '../abstracts/mixins';
+
+.project {
+  &__name {
+    @include highlight;
+  }
+
+  &__info {
+    @include secondaryText;
+  }
+
+  &__tags {
+    @include tagContainer;
+  }
+
+  @include projectCard;
+}
+
+.tagContainer {
+  @include tagContainer;
+}
+
+.linksContainer {
+  @include linksContainer;
+}
+
+.project {
+  &__name {
+    @include highlight;
+  }
+
+  &__info {
+    @include secondaryText;
+  }
+
+  &__tags {
+    @include tagContainer;
+  }
+
+  @include projectCard;
+}
+
+.tagContainer {
+  @include tagContainer;
+}
+
+.linksContainer {
+  @include linksContainer;
+}
