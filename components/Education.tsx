@@ -3,7 +3,7 @@ import styles from '@/scss/components/Education.module.scss';
 
 const Education: FC = () => {
   return (
-    <div>
+    <section>
       <div className={styles.header}>Education</div>
       <table
         className={styles.table}
@@ -37,7 +37,7 @@ const Education: FC = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
   );
 };
 

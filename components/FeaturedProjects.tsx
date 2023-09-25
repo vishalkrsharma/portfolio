@@ -8,7 +8,7 @@ import Projects from './Project';
 
 const FeaturedProjects: FC = () => {
   return (
-    <div className={styles.featuredProjectsContainer}>
+    <section className={styles.featuredProjectsContainer}>
       <div className={styles.header}>Featured Projects</div>
       {PROJECTS.map(
         (project, idx) =>
@@ -25,7 +25,7 @@ const FeaturedProjects: FC = () => {
       >
         All Projects
       </Link>
-    </div>
+    </section>
   );
 };
 

@@ -34,11 +34,11 @@ const Intro: FC = () => {
 
   return (
     <div className={styles.introContainer}>
-      <div className={styles.header}>
+      <header className={styles.header}>
         <div className={styles.header__name}>Vishal Kumar Sharma</div>
         <div className={styles.header__primary}>Web Developer & Designer</div>
         <div className={styles.tag}>Crafting digital wonders through the fusion of code and creativity.</div>
-      </div>
+      </header>
       <nav className={styles.nav}>
         <div
           className={`${styles.nav__link} ${isActive === 'about' && styles['active']}`}
