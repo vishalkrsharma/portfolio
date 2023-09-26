@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: 'Vishal Kumar Sharma',
   description: "Explore Vishal Kumar Sharma's portfolio repository, showcasing a collection of projects and achievements.",
   icons: {
-    icon: '/favicon.ico',
-    apple: '/favicon.ico',
+    icon: '/assets/favicon.ico',
+    apple: '/assets/favicon.ico',
   },
 };
 

@@ -93,7 +93,7 @@ const Intro: FC = () => {
           <NavButton
             $isActive={false}
             ariaLabel='Resume'
-            href='/Resume - Vishal Kumar Sharma.pdf'
+            href='/assets/Resume - Vishal Kumar Sharma.pdf'
             newTab={true}
           >
             Resume
@@ -106,68 +106,3 @@ const Intro: FC = () => {
 };
 
 export default Intro;
-
-// const IntroContainer = styled.div``;
-// const HeaderContainer = styled.div``;
-
-// const Header = styled.div``;
-
-// const Tag = styled(SecondaryText)`
-//   @media (min-width: 1024px) {
-//     width: 80%;
-//   }
-// `;
-
-// const Nav = styled.nav`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: flex-start;
-//   gap: 1rem;
-//   @media (max-width: 1024px) {
-//     display: none;
-//   }
-// `;
-// const NavLink = styled.div<NavLinkProps>`
-//   cursor: pointer;
-//   display: block;
-//   font-size: 1.5rem;
-//   color: var(--primary);
-//   transition: all 0.2s;
-//   font-weight: 600;
-//   color: ${(props) => (props.$isActive ? 'var(--text)' : 'var(--primary)')};
-
-//   .line {
-//     background-color: ${(props) => (props.$isActive ? 'var(--text)' : 'var(--primary)')};
-//     width: ${(props) => (props.$isActive ? '8rem' : '5rem')};
-//   }
-//   &:hover {
-//     color: var(--text);
-//     .line {
-//       width: 8rem;
-//       background-color: var(--text);
-//     }
-//   }
-// `;
-
-// const Line = styled.div`
-//   margin-bottom: 0.7rem;
-//   margin-right: 1rem;
-//   display: inline-block;
-//   height: 0.1rem;
-//   width: 5rem;
-//   background-color: var(--primary);
-//   transition: all 0.2s;
-// `;
-
-// const IconsButtonsContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1rem;
-// `;
-
-// const NavButtonsContainer = styled.div`
-//   display: flex;
-//   gap: 1rem;
-//   margin-bottom: 1rem;
-// `;
