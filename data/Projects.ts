@@ -38,7 +38,7 @@ export const PROJECTS = [
     'It is a simple portfolio website.',
     'https://vishalkrsharma.vercel.app/',
     ['https://github.com/vishalkrsharma/portfolio'],
-    ['ReactJs', 'styles-components', 'TypeScript'],
+    ['NextJs', 'Styles Components', 'TypeScript'],
     true
   ),
   new Project(

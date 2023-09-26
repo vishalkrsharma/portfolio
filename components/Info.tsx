@@ -8,13 +8,13 @@ import styles from '@/scss/components/Info.module.scss';
 
 const Info: FC = () => {
   return (
-    <div className={styles.infoContainer}>
+    <main className={styles.infoContainer}>
       <About />
       <Education />
       <Skills />
       <FeaturedProjects />
       <Footer />
-    </div>
+    </main>
   );
 };
 

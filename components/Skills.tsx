@@ -3,7 +3,7 @@ import styles from '@/scss/components/Skills.module.scss';
 
 const Skills: FC = () => {
   return (
-    <div>
+    <section>
       <div className={styles.header}>Skills</div>
       <table className={styles.table}>
         <tbody>
@@ -73,7 +73,7 @@ const Skills: FC = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
   );
 };
 

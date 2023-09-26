@@ -18,7 +18,7 @@ interface ProjectProps {
 
 const Project: FC<ProjectProps> = ({ project }) => {
   return (
-    <div className={styles.project}>
+    <article className={styles.project}>
       <div
         className={styles.project__name}
         style={{ fontSize: '1.75rem' }}
@@ -58,7 +58,7 @@ const Project: FC<ProjectProps> = ({ project }) => {
           ))
         )}
       </div>
-    </div>
+    </article>
   );
 };
 

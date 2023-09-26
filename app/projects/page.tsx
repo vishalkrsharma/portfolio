@@ -21,7 +21,7 @@ const ProjectsPage: FC = () => {
 
   return (
     <div className={styles.projectsPageContainer}>
-      <div className={styles.header}>
+      <header className={styles.header}>
         <Link href='/'>
           <FaArrowLeft
             size={30}
@@ -31,13 +31,15 @@ const ProjectsPage: FC = () => {
           />
         </Link>
         <div className={styles.title}>All Projects</div>
-      </div>
-      {PROJECTS.map((project, idx) => (
-        <Project
-          project={project}
-          key={idx}
-        />
-      ))}
+      </header>
+      <section>
+        {PROJECTS.map((project, idx) => (
+          <Project
+            project={project}
+            key={idx}
+          />
+        ))}
+      </section>
     </div>
   );
 };

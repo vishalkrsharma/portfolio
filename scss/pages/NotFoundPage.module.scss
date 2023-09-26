@@ -1,0 +1,50 @@
+@import '../abstracts/variables.module';
+@import '../abstracts/mixins';
+
+.notFoundPageContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $primary;
+  gap: 2rem;
+}
+
+.header {
+  &__primary {
+    font-size: 8rem;
+    font-weight: 800;
+    transition: 0.2s color;
+    text-decoration: underline;
+    letter-spacing: 1.5rem;
+
+    &:hover {
+      color: $text;
+    }
+  }
+
+  &__secondary {
+    font-size: 2.5rem;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link {
+  font-size: 2rem;
+  border-radius: $borderRadius;
+  background-color: $accent;
+  padding: 1rem 2rem;
+  color: $text;
+  transition: color 0.2s;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $text;
+    color: $background;
+  }
+}
