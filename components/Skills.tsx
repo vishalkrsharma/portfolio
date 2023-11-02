@@ -12,8 +12,21 @@ const Skills = () => {
             </td>
             <td>
               <div className={styles.data}>
-                C<br /> C++
+                C++
                 <br /> Java
+                <br /> JavaScript <br /> TypeScript
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td className={styles.label}>
+              <div className={styles.data}>Cirrculum</div>
+            </td>
+            <td>
+              <div className={styles.data}>
+                DSA
+                <br /> DBMS
+                <br /> OOP
               </div>
             </td>
           </tr>
@@ -29,6 +42,7 @@ const Skills = () => {
                 <br /> ReactJs
                 <br /> NextJs
                 <br /> NodeJs
+                <br /> Jest
               </div>
             </td>
           </tr>
@@ -42,7 +56,7 @@ const Skills = () => {
           </tr>
           <tr>
             <td className={styles.label}>
-              <div className={styles.data}>Tech Stack</div>
+              <div className={styles.data}>Web Dev Stack</div>
             </td>
             <td>
               <div className={styles.data}>MERN</div>
@@ -62,9 +76,9 @@ const Skills = () => {
             </td>
             <td>
               <div className={styles.data}>
-                Data Structures and Algorithms
+                MySql
                 <br />
-                MySQL
+                MongoDB
                 <br />
                 Linux
               </div>
