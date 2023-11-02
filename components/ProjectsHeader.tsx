@@ -26,7 +26,7 @@ const ProjectsHeader = () => {
           onMouseLeave={() => handleMouseLeave()}
         />
       </Link>
-      <div className={styles.title}>All Projects</div>
+      <h1 className={styles.title}>All Projects</h1>
     </header>
   );
 };

@@ -3,7 +3,7 @@ import styles from '@/scss/components/About.module.scss';
 const About = () => {
   return (
     <section>
-      <div className={styles.header}>About</div>
+      <h1 className={styles.header}>About</h1>
       <article className={styles.secondaryText}>
         I&apos;m a final year Computer Science undergraduate, possesses an impressive knack for crafting <span className={styles.highlight}>functional </span>
         and

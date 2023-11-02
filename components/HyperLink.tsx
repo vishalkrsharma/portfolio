@@ -33,7 +33,7 @@ const HyperLink = ({ children, link, gh }: { children: ReactNode; link: string; 
       ) : (
         <FaLink
           size={15}
-          style={{ transition: 'all .2s', cursor: 'pointer', fill: isHovered ? variables.text : variables.primary }}
+          style={{ transition: 'all .2s', cursor: 'pointer', fill: isHovered ? variables.textRgb : variables.primaryRgb }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         />

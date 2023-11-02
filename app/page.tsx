@@ -5,7 +5,10 @@ import styles from '@/scss/pages/HomePage.module.scss';
 const HomePage = () => {
   return (
     <>
-      <div className={styles.homePageContainer}>
+      <div
+        className={styles.homePageContainer}
+        data-testid='homepage'
+      >
         <Intro />
         <Info />
       </div>
