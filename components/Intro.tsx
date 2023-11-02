@@ -1,14 +1,12 @@
-import { useState, FC, HTMLAttributes, useEffect } from 'react';
+'use client';
+
+import { useState, useEffect } from 'react';
 import Icons from './Icons';
 import styles from '@/scss/components/Intro.module.scss';
 import { usePathname } from 'next/navigation';
 import NavButton from './NavButton';
 
-interface NavLinkProps extends HTMLAttributes<HTMLDivElement> {
-  $isActive?: boolean;
-}
-
-const Intro: FC = () => {
+const Intro = () => {
   const [isActive, setIsActive] = useState('about');
   const pathname = usePathname();
 

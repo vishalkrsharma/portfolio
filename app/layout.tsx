@@ -1,5 +1,6 @@
-import '@/scss/globals.scss';
 import type { Metadata } from 'next';
+import { PropsWithChildren } from 'react';
+import '@/scss/globals.scss';
 
 export const metadata: Metadata = {
   title: 'Vishal Kumar Sharma',
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang='en'>
       <body>{children}</body>

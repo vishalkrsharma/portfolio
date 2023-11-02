@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import styles from '@/scss/components/Skills.module.scss';
 
-const Skills: FC = () => {
+const Skills = () => {
   return (
     <section>
       <div className={styles.header}>Skills</div>

@@ -1,10 +1,10 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
 import styles from '@/scss/components/Icons.module.scss';
 import variables from '@/scss/abstracts/_variables.module.scss';
 
-const Icon: FC = () => {
+const Icon = () => {
   const [isHoveredLinkedin, setIsHoveredLinkedin] = useState(false);
   const [isHoveredGithub, setIsHoveredGithub] = useState(false);
   const [isHoveredLeetcode, setIsHoveredLeetcode] = useState(false);
@@ -64,13 +64,3 @@ const Icon: FC = () => {
 };
 
 export default Icon;
-
-// const IconsContainer = styled.div`
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: stretch;
-//   gap: 1.5rem;
-//   /* @media (max-width: 1024px) {
-//     margin-top: 2rem;
-//   } */
-// `;

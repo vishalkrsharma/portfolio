@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import styles from '@/scss/components/Education.module.scss';
 
-const Education: FC = () => {
+const Education = () => {
   return (
     <section>
       <div className={styles.header}>Education</div>
@@ -42,5 +41,3 @@ const Education: FC = () => {
 };
 
 export default Education;
-
-// const EducationContainer = styled.div``;

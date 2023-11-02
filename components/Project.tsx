@@ -1,5 +1,4 @@
 import styles from '@/scss/components/Project.module.scss';
-import { FC } from 'react';
 import Tag from './Tag';
 import HyperLink from './HyperLink';
 
@@ -12,11 +11,7 @@ interface Project {
   isFeatured: boolean;
 }
 
-interface ProjectProps {
-  project: Project;
-}
-
-const Project: FC<ProjectProps> = ({ project }) => {
+const Project = ({ project }: { project: Project }) => {
   return (
     <article className={styles.project}>
       <div
