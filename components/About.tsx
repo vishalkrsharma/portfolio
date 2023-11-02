@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import styles from '@/scss/components/About.module.scss';
 
-const About: FC = () => {
+const About = () => {
   return (
     <section>
       <div className={styles.header}>About</div>
@@ -19,5 +18,3 @@ const About: FC = () => {
 };
 
 export default About;
-
-// const AboutContainer = styled.div``;

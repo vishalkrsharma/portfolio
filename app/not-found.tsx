@@ -1,10 +1,7 @@
-'use client';
-
-import { FC } from 'react';
-import styles from '@/scss/pages/NotFoundPage.module.scss';
 import Link from 'next/link';
+import styles from '@/scss/pages/NotFoundPage.module.scss';
 
-const NotFoundPage: FC = () => {
+const NotFoundPage = () => {
   return (
     <main className={styles.notFoundPageContainer}>
       <div className={styles.header}>

@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import styles from '@/scss/components/Footer.module.scss';
 
-const Footer: FC = () => {
+const Footer = () => {
   return (
     <footer className={styles.footerContainer}>
       Loosely designed in <span className={styles.highlight}>Figma</span> and coded in <span className={styles.highlight}>Visual Studio Code</span> by yours
@@ -12,8 +11,3 @@ const Footer: FC = () => {
 };
 
 export default Footer;
-
-// const FooterContainer = styled.div`
-//   font-size: 1.25rem;
-//   color: var(--primary);
-// `;

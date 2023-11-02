@@ -1,0 +1,15 @@
+@import '../abstracts/mixins';
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.title {
+  @include header;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
