@@ -6,7 +6,7 @@ export const PROJECTS = [
     'It is a group project for the Nasa SpaceApps Challenge 2022 hackathon. In this project, we made a 3D simulation of the Moon and rendered the all the quakes recorded by the Apollo Lander.',
     'https://moonquake-visualized.vercel.app/',
     ['https://github.com/vishalkrsharma/moonquake-visualized'],
-    ['NextJs', 'styled-components'],
+    ['NextJs', 'CSS Modules', 'Jest'],
     true
   ),
   new Project(
@@ -38,7 +38,15 @@ export const PROJECTS = [
     'It is a simple portfolio website.',
     'https://vishalkrsharma.vercel.app/',
     ['https://github.com/vishalkrsharma/portfolio'],
-    ['NextJs', 'Styles Components', 'TypeScript'],
+    ['NextJs', 'CSS Modules', 'TypeScript', 'Jest'],
+    true
+  ),
+  new Project(
+    'NetflixGPT',
+    'Movie streaming platform + Movie Recommendation',
+    'https://netflix-gpt-d5cf6.web.app',
+    ['https://github.com/vishalkrsharma/netflix-gpt'],
+    ['ReactJs', 'TailwindCSS', 'Firebase'],
     true
   ),
   new Project(

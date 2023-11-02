@@ -12,13 +12,14 @@ const Intro = () => {
 
   const handleScroll = () => {
     let pos = window.scrollY;
-    if (0 <= pos && pos < 440) {
+    console.log(pos);
+    if (0 <= pos && pos < 260) {
       setIsActive('about');
-    } else if (440 <= pos && pos < 841) {
+    } else if (261 <= pos && pos < 687) {
       setIsActive('education');
-    } else if (841 <= pos && pos < 1553) {
+    } else if (688 <= pos && pos < 1674) {
       setIsActive('skills');
-    } else if (1553 <= pos && pos < 4000) {
+    } else if (1675 <= pos && pos < 4000) {
       setIsActive('projects');
     }
   };
@@ -52,7 +53,7 @@ const Intro = () => {
           className={`${styles.nav__link} ${isActive === 'education' && styles['active']}`}
           onClick={() => {
             setIsActive('education');
-            window.scroll({ top: 440, behavior: 'smooth' });
+            window.scroll({ top: 261, behavior: 'smooth' });
           }}
         >
           <div className={`${styles.nav__link__line} ${isActive === 'education' && styles['active']}`} />
@@ -62,7 +63,7 @@ const Intro = () => {
           className={`${styles.nav__link} ${isActive === 'skills' && styles['active']}`}
           onClick={() => {
             setIsActive('skills');
-            window.scroll({ top: 841, behavior: 'smooth' });
+            window.scroll({ top: 688, behavior: 'smooth' });
           }}
         >
           <div className={`${styles.nav__link__line} ${isActive === 'skills' && styles['active']}`} />
@@ -72,7 +73,7 @@ const Intro = () => {
           className={`${styles.nav__link} ${isActive === 'projects' && styles['active']}`}
           onClick={() => {
             setIsActive('projects');
-            window.scroll({ top: 1553, behavior: 'smooth' });
+            window.scroll({ top: 1675, behavior: 'smooth' });
           }}
         >
           <div className={`${styles.nav__link__line} ${isActive === 'projects' && styles['active']}`} />

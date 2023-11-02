@@ -28,7 +28,3 @@ const NavButton = ({
 };
 
 export default NavButton;
-
-interface NavButtonContainerProps {
-  $isActive: boolean;
-}
