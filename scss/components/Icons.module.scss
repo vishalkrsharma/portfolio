@@ -1,9 +1,12 @@
 .iconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   gap: 1.5rem;
-  /* @media (max-width: 1024px) {
-    margin-top: 2rem;
-  } */
 }

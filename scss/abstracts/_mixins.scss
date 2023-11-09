@@ -24,10 +24,11 @@
 
 @mixin button {
   padding: 0.5rem 2rem;
-  // background-color: ${(props) => (props.$isActive ? 'var(--text)' : 'var(--primary)')};
   color: $background;
   font-size: 1.5rem;
   font-weight: 600;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
   border-radius: $borderRadius;
   @media (pointer: fine) {
@@ -40,7 +41,6 @@
 
 @mixin label {
   color: $primary;
-  // font-size: 1.75rem;
   width: 20rem;
   @media (max-width: 1024px) {
     width: 15rem;
@@ -65,13 +65,19 @@
 }
 
 @mixin tagContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
   margin: 1rem 0;
 }
 
 @mixin linksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
