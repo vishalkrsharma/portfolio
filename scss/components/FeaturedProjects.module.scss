@@ -1,7 +1,12 @@
 @import '../abstracts/mixins';
 
 .featuredProjectsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   gap: 3rem;
 }
@@ -13,6 +18,8 @@
 .projectsLink {
   font-size: 1.5rem;
   color: $primary;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
   transition: 0.2s all;
   font-weight: 600;
   letter-spacing: 0.5rem;

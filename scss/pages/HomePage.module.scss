@@ -2,8 +2,14 @@
   margin: 0 auto;
   width: min(90%, 1200px);
   @media (min-width: 1024px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 1rem;
   }
