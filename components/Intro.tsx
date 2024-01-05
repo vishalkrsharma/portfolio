@@ -92,7 +92,7 @@ const Intro = () => {
           <NavButton
             $isActive={false}
             ariaLabel='Resume'
-            href='/assets/Resume - Vishal Kumar Sharma.pdf'
+            href='https://www.canva.com/design/DAFnlyFtod0/SR1A1aV-VyKWVxX17x3wFw/edit?utm_content=DAFnlyFtod0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
             newTab={true}
           >
             Resume
