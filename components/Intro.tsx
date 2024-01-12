@@ -92,7 +92,7 @@ const Intro = () => {
           <NavButton
             $isActive={false}
             ariaLabel='Resume'
-            href='https://www.canva.com/design/DAFnlyFtod0/SR1A1aV-VyKWVxX17x3wFw/edit?utm_content=DAFnlyFtod0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+            href='https://drive.google.com/drive/folders/12DLNoGWQrAZgB4nxVII88l6zcaJ8RKC4?usp=sharing'
             newTab={true}
           >
             Resume
