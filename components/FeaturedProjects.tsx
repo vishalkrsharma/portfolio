@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { PROJECTS } from '../data/Projects';
+import PROJECTS from '../data/Projects';
 import styles from '@/scss/components/FeaturedProjects.module.scss';
 import Projects from './Project';
 

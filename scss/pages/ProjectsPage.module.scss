@@ -28,6 +28,10 @@
   }
 }
 
+.projectsContainer {
+  margin: 0 2rem;
+}
+
 .project {
   @include projectCard;
 }

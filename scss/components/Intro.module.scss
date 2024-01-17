@@ -51,6 +51,9 @@
 
 .tag {
   @include secondaryText;
+
+  text-wrap: balance;
+
   @media (min-width: 1024px) {
     width: 80%;
   }

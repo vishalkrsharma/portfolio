@@ -1,4 +1,4 @@
-import { PROJECTS } from '@/data/Projects';
+import PROJECTS from '@/data/Projects';
 import styles from '@/scss/pages/ProjectsPage.module.scss';
 import Project from '@/components/Project';
 import ProjectsHeader from '@/components/ProjectsHeader';
@@ -10,7 +10,7 @@ const ProjectsPage = () => {
       data-testid='projectspage'
     >
       <ProjectsHeader />
-      <section>
+      <section className={styles.projectsContainer}>
         {PROJECTS.map((project, idx) => (
           <Project
             project={project}
