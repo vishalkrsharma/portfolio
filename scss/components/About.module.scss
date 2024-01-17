@@ -6,6 +6,8 @@
 
 .secondaryText {
   @include secondaryText;
+
+  text-wrap: balance;
 }
 
 .highlight {

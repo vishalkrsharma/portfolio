@@ -24,7 +24,7 @@ const Education = () => {
           </tr>
           <tr>
             <td className={styles.label}>
-              <div className={styles.data}>2018-2020</div>
+              <div className={styles.data}>2008-2020</div>
             </td>
             <td>
               <div className={styles.data}>

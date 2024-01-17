@@ -1,15 +1,7 @@
 import styles from '@/scss/components/Project.module.scss';
 import Tag from './Tag';
 import HyperLink from './HyperLink';
-
-interface Project {
-  title: string;
-  info: string;
-  projectLink: string;
-  githubLinks: string[];
-  techTags: string[];
-  isFeatured: boolean;
-}
+import Project from '@/models/Project';
 
 const Project = ({ project }: { project: Project }) => {
   return (
@@ -20,38 +12,39 @@ const Project = ({ project }: { project: Project }) => {
       >
         {project.title}
       </div>
-      <div className={styles.project__info}>{project.info}</div>
+      <ul className={styles.project__info}>
+        {project.info.map((inf, idx) => (
+          <li
+            className={styles.project__info__item}
+            key={idx}
+          >
+            {inf}
+          </li>
+        ))}
+      </ul>
       <div className={styles.project__tags}>
         {project.techTags.map((tag, idx) => (
           <Tag key={idx}>{tag}</Tag>
         ))}
       </div>
-
       <div className={styles.linksContainer}>
-        <HyperLink
-          link={project.projectLink}
-          gh={false}
-        >
-          Project
-        </HyperLink>
-        {project.githubLinks.length === 1 ? (
+        {project.projectLink.map((link, idx) => (
           <HyperLink
-            link={project.githubLinks[0]}
+            link={link.link}
+            gh={false}
+          >
+            {link.label}
+          </HyperLink>
+        ))}
+        {project.githubLinks.map((link, idx) => (
+          <HyperLink
+            key={idx}
+            link={link.link}
             gh={true}
           >
-            Github
+            {link.label}
           </HyperLink>
-        ) : (
-          project.githubLinks.map((link, idx) => (
-            <HyperLink
-              key={idx}
-              link={link}
-              gh={true}
-            >
-              {idx === 0 ? 'Client' : 'Server'}
-            </HyperLink>
-          ))
-        )}
+        ))}
       </div>
     </article>
   );
