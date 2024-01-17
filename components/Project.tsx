@@ -30,6 +30,7 @@ const Project = ({ project }: { project: Project }) => {
       <div className={styles.linksContainer}>
         {project.projectLink.map((link, idx) => (
           <HyperLink
+            key={idx}
             link={link.link}
             gh={false}
           >
