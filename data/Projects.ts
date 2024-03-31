@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
     ],
     projectLink: [
       {
-        link: 'https://tm-client-black.vercel.app/',
+        link: 'https://taskmate.vercel.app/',
         label: 'Project',
       },
     ],
