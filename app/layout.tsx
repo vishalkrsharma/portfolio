@@ -1,20 +1,26 @@
+import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { PropsWithChildren } from 'react';
-import '@/scss/globals.scss';
+import { Victor_Mono } from 'next/font/google';
+
+import '@/app/globals.css';
+
+const victorMono = Victor_Mono({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'], style: ['normal', 'italic'] });
 
 export const metadata: Metadata = {
   title: 'Vishal Kumar Sharma',
-  description: "Explore Vishal Kumar Sharma's portfolio repository, showcasing a collection of projects and achievements.",
-  icons: {
-    icon: '/assets/favicon.ico',
-    apple: '/assets/favicon.ico',
-  },
+  description: "Explore Vishal's portfolio repository, showcasing a collection of projects and achievements.",
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+const RootLayout = ({
+  children,
+}: Readonly<{
+  children: ReactNode;
+}>) => {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className={victorMono.className}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;
