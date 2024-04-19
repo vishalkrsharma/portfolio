@@ -30,19 +30,28 @@ const SocialLinks = () => {
           href='https://www.linkedin.com/in/vishalkrsharma/'
           target='_blank'
         >
-          <FaLinkedin className='hover:text-text text-4xl' />
+          <FaLinkedin
+            className='hover:text-text'
+            size={32}
+          />
         </Link>
         <Link
           href='https://www.github.com/vishalkrsharma'
           target='_blank'
         >
-          <FaGithub className='hover:text-text text-4xl' />
+          <FaGithub
+            className='hover:text-text'
+            size={32}
+          />
         </Link>
         <Link
           href='https://www.leetcode.com/vishalkrsharma'
           target='_blank'
         >
-          <SiLeetcode className='hover:text-text text-4xl' />
+          <SiLeetcode
+            className='hover:text-text'
+            size={32}
+          />
         </Link>
       </div>
     </div>
