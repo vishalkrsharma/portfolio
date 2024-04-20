@@ -2,6 +2,7 @@ const getAllRepos = async () => {
   try {
     const res = await fetch('https://api.github.com/users/vishalkrsharma/repos', {
       method: 'GET',
+      cache: 'no-cache',
     });
 
     if (!res.ok) {
