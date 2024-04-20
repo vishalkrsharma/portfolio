@@ -10,8 +10,7 @@ const Nav = () => {
   const pathname = usePathname();
 
   const handleScroll = () => {
-    let pos = window.scrollY;
-    console.log(pos);
+    const pos = window.scrollY;
     if (0 <= pos && pos < 249) {
       setIsActive('about');
     } else if (250 <= pos && pos < 1050) {

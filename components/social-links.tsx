@@ -3,10 +3,11 @@ import { SiLeetcode } from 'react-icons/si';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import { cn } from '@/lib/utils';
+import ArrowIndicator from '@/components/arrow-indicator';
 
 const SocialLinks = () => {
   return (
-    <div className='space-y-6'>
+    <div className='space-y-6 w-full'>
       <div className='space-x-4'>
         <Link
           className={cn('py-2 px-4 bg-text text-background font-semibold transition-all rounded-sm hover:bg-text')}
@@ -54,6 +55,7 @@ const SocialLinks = () => {
           />
         </Link>
       </div>
+      <ArrowIndicator />
     </div>
   );
 };
