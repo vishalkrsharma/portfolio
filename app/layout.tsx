@@ -1,10 +1,8 @@
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Victor_Mono } from 'next/font/google';
 
 import '@/app/globals.css';
-
-const victorMono = Victor_Mono({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'], style: ['normal', 'italic'] });
+import { victorMono } from '@/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'Vishal Kumar Sharma',
