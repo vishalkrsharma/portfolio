@@ -1,20 +1,28 @@
+import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { PropsWithChildren } from 'react';
-import '@/scss/globals.scss';
+
+import '@/app/globals.css';
+import { victorMono } from '@/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'Vishal Kumar Sharma',
-  description: "Explore Vishal Kumar Sharma's portfolio repository, showcasing a collection of projects and achievements.",
+  description: "Explore Vishal's portfolio repository, showcasing a collection of projects and achievements.",
   icons: {
-    icon: '/assets/favicon.ico',
-    apple: '/assets/favicon.ico',
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+const RootLayout = ({
+  children,
+}: Readonly<{
+  children: ReactNode;
+}>) => {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className={victorMono.className}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;
