@@ -1,6 +1,6 @@
 import Nav from '@/components/nav';
 import SocialLinks from '@/components/social-links';
-import { FaArrowDown } from 'react-icons/fa';
+import ArrowIndicator from './arrow-indicator';
 
 const Intro = () => {
   return (
@@ -14,7 +14,7 @@ const Intro = () => {
       </header>
       <Nav />
       <SocialLinks />
-      <FaArrowDown className='animate-bounce w-8 h-8 font-thin mx-auto' />
+      <ArrowIndicator />
     </div>
   );
 };
