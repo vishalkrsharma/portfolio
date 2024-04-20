@@ -1,6 +1,5 @@
 import Nav from '@/components/nav';
 import SocialLinks from '@/components/social-links';
-import ArrowIndicator from './arrow-indicator';
 
 const Intro = () => {
   return (
@@ -14,7 +13,6 @@ const Intro = () => {
       </header>
       <Nav />
       <SocialLinks />
-      <ArrowIndicator />
     </div>
   );
 };
