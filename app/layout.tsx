@@ -9,6 +9,10 @@ const victorMono = Victor_Mono({ subsets: ['latin'], weight: ['100', '200', '300
 export const metadata: Metadata = {
   title: 'Vishal Kumar Sharma',
   description: "Explore Vishal's portfolio repository, showcasing a collection of projects and achievements.",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 };
 
 const RootLayout = ({

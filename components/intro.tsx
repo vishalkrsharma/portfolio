@@ -1,9 +1,10 @@
 import Nav from '@/components/nav';
 import SocialLinks from '@/components/social-links';
+import { FaArrowDown } from 'react-icons/fa';
 
 const Intro = () => {
   return (
-    <div className='py-32 px-4 flex flex-col justify-between items-start min-h-screen lg:sticky lg:top-0 lg:w-1/2'>
+    <div className='py-32 px-4 flex flex-col justify-between items-start min-h-[800px] h-screen lg:sticky lg:top-0 lg:w-1/2'>
       <header className='text-text flex flex-col gap-4'>
         <div className='text-4xl font-bold tracking-[.5rem] leading-[3rem] text-wrap'>
           Vishal Kumar <br /> Sharma
@@ -13,6 +14,7 @@ const Intro = () => {
       </header>
       <Nav />
       <SocialLinks />
+      <FaArrowDown className='animate-bounce w-8 h-8 font-thin mx-auto' />
     </div>
   );
 };

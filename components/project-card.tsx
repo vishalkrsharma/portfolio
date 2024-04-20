@@ -17,7 +17,7 @@ const ProjectCard = ({ repo }: { repo: Repository }) => {
         </Link>
         &nbsp;<span className='font-semibold'>|</span>&nbsp;
         <Link
-          href={repo.homepage}
+          href={repo.homepage || repo.html_url}
           target='_blank'
         >
           <FaLink className='text-primary hover:text-text transition-all text-xl' />
@@ -25,8 +25,13 @@ const ProjectCard = ({ repo }: { repo: Repository }) => {
       </div>
       <p className='text-primary text-balance'>{repo.description}</p>
       <div className='flex flex-wrap gap-2'>
-        {repo.topics.map((topic) => (
-          <div className='text-xs font-bold py-1 px-2 bg-primary rounded-full'>{topic}</div>
+        {repo.topics.map((topic, idx) => (
+          <div
+            key={idx}
+            className='text-xs font-bold py-1 px-2 bg-primary rounded-full'
+          >
+            {topic}
+          </div>
         ))}
       </div>
     </div>
