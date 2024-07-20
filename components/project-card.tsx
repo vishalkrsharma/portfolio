@@ -7,15 +7,15 @@ const ProjectCard = ({ repo }: { repo: Repository }) => {
   return (
     <div className='space-y-4'>
       <div className='flex items-center justify-start'>
-        <h2 className='font-semibold tracking-widest'>{repo.name}</h2>
-        &nbsp;<span className='font-semibold'>|</span>&nbsp;
+        <h2 className='font-semibold tracking-widest text-text'>{repo.name}</h2>
+        &nbsp;<span className='font-semibold text-text'>|</span>&nbsp;
         <Link
           href={repo.html_url}
           target='_blank'
         >
           <FaGithub className='text-primary hover:text-text transition-all text-xl' />
         </Link>
-        &nbsp;<span className='font-semibold'>|</span>&nbsp;
+        &nbsp;<span className='font-semibold text-text'>|</span>&nbsp;
         <Link
           href={repo.homepage || repo.html_url}
           target='_blank'

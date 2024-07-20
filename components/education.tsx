@@ -5,8 +5,8 @@ const Education = () => {
       <table className='w-full text-left space-y-20 border-separate border-spacing-4'>
         <thead>
           <tr>
-            <th className='border-none align-top w-40'>Timeline</th>
-            <th className='border-none align-top'>Course</th>
+            <th className='border-none align-top w-40 text-text'>Timeline</th>
+            <th className='border-none align-top text-text'>Course</th>
           </tr>
         </thead>
         <tbody>

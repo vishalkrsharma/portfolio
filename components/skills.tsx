@@ -5,8 +5,8 @@ const Skills = () => {
       <table className='w-full text-left space-y-20 border-separate border-spacing-4'>
         <thead>
           <tr>
-            <th className='border-none align-top w-40'>Domain</th>
-            <th className='border-none align-top'>Skills</th>
+            <th className='border-none align-top w-40 text-text'>Domain</th>
+            <th className='border-none align-top text-text'>Skills</th>
           </tr>
         </thead>
         <tbody>

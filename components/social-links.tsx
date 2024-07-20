@@ -32,7 +32,7 @@ const SocialLinks = () => {
           target='_blank'
         >
           <FaLinkedin
-            className='hover:text-text'
+            className='hover:text-text text-text'
             size={32}
           />
         </Link>
@@ -41,7 +41,7 @@ const SocialLinks = () => {
           target='_blank'
         >
           <FaGithub
-            className='hover:text-text'
+            className='hover:text-text text-text'
             size={32}
           />
         </Link>
@@ -50,7 +50,7 @@ const SocialLinks = () => {
           target='_blank'
         >
           <SiLeetcode
-            className='hover:text-text'
+            className='hover:text-text text-text'
             size={32}
           />
         </Link>
