@@ -4,7 +4,7 @@ import { BackgroundLines } from '@/components/ui/background-lines';
 const Hero = () => {
   return (
     <BackgroundLines className='min-h-screen mx-auto px-2 flex flex-col justify-center items-center gap-8'>
-      <div className='z-20 container flex flex-col justify-center items-center gap-4 -pt-20'>
+      <div className='z-20 flex flex-col justify-center items-center gap-4 -pt-20'>
         <Avatar
           name={process.env.NEXT_PUBLIC_FULL_NAME || '-'}
           size={150}

@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import { ModeToggle } from '@/components/ui/mode-toggle';
 import { FloatingDock } from '@/components/ui/floating-dock';
 import { FLOATING_DOCK_DATA } from '@/data/floating-dock-items.data';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 export const metadata: Metadata = {
   title: '@vishalkrsharma | Vishal Kumar Sharma - Software Engineer Portfolio',
@@ -23,14 +24,16 @@ export default function RootLayout({
       lang='en'
       suppressHydrationWarning
     >
-      <body className={cn(firaCode.variable, doto.variable, 'font-fira-code antialiased min-h-screen flex flex-col bg-background relative')}>
+      <body className={cn('font-fira-code antialiased min-h-screen flex flex-col bg-background relative', firaCode.variable, doto.variable)}>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
           enableSystem
           disableTransitionOnChange
         >
-          <main className='min-h-screen'>{children}</main>
+          <TooltipProvider>
+            <main className='min-h-screen'>{children}</main>
+          </TooltipProvider>
           <ModeToggle className='fixed top-4 right-4 z-50' />
           <FloatingDock items={FLOATING_DOCK_DATA} />
         </ThemeProvider>
