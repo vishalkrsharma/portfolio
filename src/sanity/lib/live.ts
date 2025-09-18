@@ -3,6 +3,7 @@
 // https://github.com/sanity-io/next-sanity#live-content-api for more information.
 import { defineLive } from 'next-sanity';
 import { client } from './client';
+import { serverToken, browserToken } from '../env';
 
 export const { sanityFetch, SanityLive } = defineLive({
   client: client.withConfig({
@@ -10,4 +11,6 @@ export const { sanityFetch, SanityLive } = defineLive({
     // https://www.sanity.io/docs/api-versioning
     apiVersion: 'vX',
   }),
+  serverToken,
+  browserToken,
 });

@@ -1,6 +1,6 @@
 'use client';
 
-import { TFloatingDockItem } from '@/types/ui.type';
+import { TFloatingDockItem } from '@/types/ui.types';
 import { FolderRoot, Home, MessageCircleDashed } from 'lucide-react';
 
 export const FLOATING_DOCK_DATA: TFloatingDockItem[] = [
