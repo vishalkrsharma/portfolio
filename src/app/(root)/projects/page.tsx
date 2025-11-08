@@ -1,5 +1,5 @@
-import Hero from '@/app/(root)/projects/_sections/hero';
-import ProjectsShowcase from '@/app/(root)/projects/_sections/projects-showcase';
+import Hero from './_sections/hero';
+import ProjectsShowcase from './_sections/projects-showcase';
 
 const ProjectsPage = () => {
   return (
