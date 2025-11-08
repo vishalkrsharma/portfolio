@@ -1,13 +1,11 @@
 import Hero from './_sections/hero';
 import ProjectsShowcase from './_sections/projects-showcase';
 
-const ProjectsPage = () => {
+export default function ProjectsPage() {
   return (
-    <main className='min-h-screen container px-4 mx-auto'>
+    <main className='h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth px-4'>
       <Hero />
       <ProjectsShowcase />
     </main>
   );
-};
-
-export default ProjectsPage;
+}

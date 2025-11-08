@@ -1,7 +1,7 @@
 'use client';
 
 import { TFloatingDockItem } from '@/types/ui.types';
-import { FolderRoot, Home, MessageCircleDashed } from 'lucide-react';
+import { FolderGit2, Home, Info, UserRoundSearch } from 'lucide-react';
 
 export const FLOATING_DOCK_DATA: TFloatingDockItem[] = [
   {
@@ -12,17 +12,17 @@ export const FLOATING_DOCK_DATA: TFloatingDockItem[] = [
   {
     title: 'Projects',
     href: '/projects',
-    icon: FolderRoot,
+    icon: FolderGit2,
   },
 
   {
-    title: 'Socials',
-    href: '/socials',
-    icon: MessageCircleDashed,
+    title: 'Profiles',
+    href: '/profiles',
+    icon: UserRoundSearch,
   },
   {
     title: 'About',
     href: '/about',
-    icon: MessageCircleDashed,
+    icon: Info,
   },
 ];

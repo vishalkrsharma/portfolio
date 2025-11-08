@@ -32,5 +32,20 @@ export const tech = defineType({
       },
       validation: (Rule) => Rule.required().error('Slug is required'),
     }),
+    defineField({
+      name: 'value',
+      title: 'Value',
+      type: 'number',
+      validation: (Rule) => Rule.min(1).max(10),
+      initialValue: 1,
+    }),
+    {
+      name: 'color',
+      title: 'Color',
+      type: 'color',
+      options: {
+        disableAlpha: true,
+      },
+    },
   ],
 });

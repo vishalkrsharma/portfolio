@@ -13,7 +13,7 @@ const ProjectsShowcase = async () => {
   } = await sanityFetch({ query: PROJECTS_QUERY });
 
   return (
-    <section className='min-h-screen flex flex-col justify-center items-center gap-8 mx-auto p-4'>
+    <section className='min-h-screen flex flex-col justify-center items-center gap-8 mx-auto p-4 snap-start'>
       <div className='flex justify-between items-center gap-4 w-full'>
         <h2 className='md:text-3xl lg:text-4xl font-semibold'>Featured Projects</h2>
         <Link

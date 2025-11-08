@@ -9,7 +9,7 @@ const AllProjectsShowcase = async () => {
   }
 
   return (
-    <section className='min-h-screen flex flex-col justify-center items-stretch gap-4 mx-auto'>
+    <section className='flex justify-center items-start flex-wrap gap-4 mx-auto'>
       {allProjects?.data.map((project) => (
         <ProjectCard
           key={project.id}

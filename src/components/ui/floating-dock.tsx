@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { FloatingDockItem } from '@/types/ui.types';
+import { TFloatingDockItem } from '@/types/ui.types';
 import { IconLayoutNavbarCollapse } from '@tabler/icons-react';
 import { LucideProps } from 'lucide-react';
 import { AnimatePresence, MotionValue, motion, useMotionValue, useSpring, useTransform } from 'motion/react';
@@ -16,7 +16,7 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName,
 }: {
-  items: FloatingDockItem[];
+  items: TFloatingDockItem[];
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
@@ -38,7 +38,7 @@ export const FloatingDock = ({
   );
 };
 
-const FloatingDockMobile = ({ items, className }: { items: FloatingDockItem[]; className?: string }) => {
+const FloatingDockMobile = ({ items, className }: { items: TFloatingDockItem[]; className?: string }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className={cn('relative block md:hidden w-full', className)}>
@@ -91,7 +91,7 @@ const FloatingDockMobile = ({ items, className }: { items: FloatingDockItem[]; c
   );
 };
 
-const FloatingDockDesktop = ({ items, className }: { items: FloatingDockItem[]; className?: string }) => {
+const FloatingDockDesktop = ({ items, className }: { items: TFloatingDockItem[]; className?: string }) => {
   const mouseX = useMotionValue(Infinity);
   return (
     <motion.div

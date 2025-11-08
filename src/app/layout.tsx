@@ -7,6 +7,7 @@ import { ModeToggle } from '@/components/ui/mode-toggle';
 import { FloatingDock } from '@/components/ui/floating-dock';
 import { FLOATING_DOCK_DATA } from '@/data/floating-dock-items.data';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import Devtools from '@/app/(root)/_components/devtools';
 
 export const metadata: Metadata = {
   title: '@vishalkrsharma | Vishal Kumar Sharma - Software Engineer Portfolio',
@@ -34,8 +35,9 @@ export default function RootLayout({
           <TooltipProvider>
             <main className='min-h-screen'>{children}</main>
           </TooltipProvider>
-          <ModeToggle className='fixed top-4 right-4 z-50' />
+          <ModeToggle className='fixed top-5 right-5 z-50' />
           <FloatingDock items={FLOATING_DOCK_DATA} />
+          <Devtools className='fixed bottom-5 left-5 z-50' />
         </ThemeProvider>
       </body>
     </html>
