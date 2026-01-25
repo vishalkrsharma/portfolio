@@ -16,10 +16,17 @@ export const getAllProjects = async (): Promise<ApiResponse<GitHubRepo[]>> => {
       message: 'Repositories fetched successfully.',
     };
   } catch (error: unknown) {
+    let errorMessage = 'An unknown error occurred';
+    if (axios.isAxiosError(error)) {
+      errorMessage = error.response?.data?.message || error.message;
+    } else if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+
     return {
       data: [],
       success: false,
-      message: error!.message || error?.response?.data?.message,
+      message: errorMessage,
     };
   }
 };

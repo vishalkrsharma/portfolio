@@ -37,7 +37,11 @@ export type Block = {
   _key: string;
   _type: 'block';
   children: Span[];
-  markDefs: any[];
+  markDefs: Array<{
+    _key: string;
+    _type: string;
+    [key: string]: unknown;
+  }>;
   style: string;
 };
 
