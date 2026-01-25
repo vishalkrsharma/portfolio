@@ -1,0 +1,16 @@
+{
+  "path": "./src/**/*.{ts,tsx,js,jsx}",
+  "schema": "./schema.json",
+  "generates": "./src/types/sanity.types.ts",
+  "overloadClientMethods": true,
+  "expandReferences": true,
+  "groqQueries": [
+    {
+      "path": "./src/sanity/lib/queries.ts",
+      "variables": {
+        "slug": "string"
+      },
+      "dereference": ["tech", "category", "heroImage", "images"]
+    }
+  ]
+}
