@@ -10,9 +10,18 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import Devtools from '@/app/(root)/_components/devtools';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://vishalkrsharma.com'),
   title: '@vishalkrsharma | Vishal Kumar Sharma - Software Engineer Portfolio',
   description:
     'Explore the professional portfolio of Vishal Kumar Sharma, a Software Engineer specializing in full-stack web development with React, Next.js, TypeScript, and Node.js. Discover projects, skills, achievements, and experience in building scalable and high-performance applications.',
+  icons: {
+    icon: [
+      { url: '/metadata/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/metadata/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [{ url: '/metadata/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  manifest: '/metadata/site.webmanifest',
 };
 
 export default function RootLayout({
