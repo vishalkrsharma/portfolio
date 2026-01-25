@@ -2,7 +2,7 @@
 
 import { Frown } from 'lucide-react';
 
-const ErrorPage = ({ error, reset }: { error: Error; reset: () => void }) => {
+const ErrorPage = ({ error }: { error: Error }) => {
   console.log(error);
 
   return (

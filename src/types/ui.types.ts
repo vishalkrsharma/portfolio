@@ -1,3 +1,4 @@
+import { Icon, IconProps } from '@tabler/icons-react';
 import { LucideProps } from 'lucide-react';
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 
@@ -10,5 +11,5 @@ export type TFloatingDockItem = {
 export type TPlatform = {
   title: string;
   href: string;
-  icon: ForwardRefExoticComponent<LucideProps & RefAttributes<SVGSVGElement>>;
+  icon: ForwardRefExoticComponent<LucideProps & RefAttributes<SVGSVGElement>> | ForwardRefExoticComponent<IconProps & RefAttributes<Icon>>;
 };

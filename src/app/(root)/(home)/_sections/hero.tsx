@@ -1,4 +1,3 @@
-import { Avatar } from '@/components/ui/avatar';
 import { BackgroundLines } from '@/components/ui/background-lines';
 import { PixelatedCanvas } from '@/components/ui/pixelated-canvas';
 

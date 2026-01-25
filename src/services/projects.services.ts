@@ -15,11 +15,11 @@ export const getAllProjects = async (): Promise<ApiResponse<GitHubRepo[]>> => {
       success: true,
       message: 'Repositories fetched successfully.',
     };
-  } catch (error: any) {
+  } catch (error: unknown) {
     return {
       data: [],
       success: false,
-      message: error?.message || error?.response?.data?.message,
+      message: error!.message || error?.response?.data?.message,
     };
   }
 };

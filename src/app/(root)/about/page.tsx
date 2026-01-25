@@ -7,14 +7,16 @@ import BeyondTheCode from '@/app/(root)/about/_sections/beyond-the-code';
 
 const AboutPage = () => {
   return (
-    <main className='h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth px-4 pb-10'>
+    <main className='h-[100dvh] overflow-y-auto snap-y snap-mandatory scroll-smooth'>
       <Hero />
-      <section className='space-y-10 min-h-screen snap-start snap-none container mx-auto '>
+      <section className='snap-start snap-always space-y-10 min-h-screen container mx-auto px-4 py-10 relative'>
         <MeetVishal />
         <HowIBuildThings />
         <MyJourneySoFar />
         <MakingAnImpact />
         <BeyondTheCode />
+        {/* Invisible snap point at the end of the section */}
+        <div className='absolute bottom-0 h-px w-full snap-end pointer-events-none' />
       </section>
     </main>
   );

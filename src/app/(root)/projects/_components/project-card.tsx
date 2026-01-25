@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
                 alt={project.title}
                 height={200}
                 width={300}
-                className='w-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out'
+                className='w-full object-contain grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out'
               />
             ) : (
               <ImageIcon />

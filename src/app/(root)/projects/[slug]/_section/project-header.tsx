@@ -1,5 +1,4 @@
-import { Badge } from '@/components/ui/badge';
-import { Project, Tech } from '@/types/sanity.types';
+import { Project } from '@/types/sanity.types';
 import { Github, LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 

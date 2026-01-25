@@ -16,6 +16,6 @@ export const PLATFORMS_DATA: TPlatform[] = [
   {
     title: 'LeetCode',
     href: 'https://leetcode.com/vishalkrsharma/',
-    icon: IconBrandLeetcode as unknown as any,
+    icon: IconBrandLeetcode,
   },
 ];
